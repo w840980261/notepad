@@ -28,16 +28,20 @@
         "source": "D:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\222cb7ce72f580e2cb2bda00b29714fd\\res\\anim\\abc_slide_in_top.xml"
     },
     {
+        "merged": "G:\\programming\\IDE\\android\\workspase\\NotePad-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_color.png.flat",
+        "source": "G:\\programming\\IDE\\android\\workspase\\NotePad-master\\app\\src\\main\\res\\mipmap-mdpi\\ic_color.png"
+    },
+    {
         "merged": "G:\\programming\\IDE\\android\\workspase\\NotePad-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
         "source": "D:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\222cb7ce72f580e2cb2bda00b29714fd\\res\\drawable-hdpi-v4\\abc_scrubber_control_to_pressed_mtrl_000.png"
     },
     {
-        "merged": "G:\\programming\\IDE\\android\\workspase\\NotePad-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat",
-        "source": "D:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\222cb7ce72f580e2cb2bda00b29714fd\\res\\drawable-xxxhdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png"
-    },
-    {
         "merged": "G:\\programming\\IDE\\android\\workspase\\NotePad-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_notification_template_part_chronometer.xml.flat",
         "source": "D:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\222cb7ce72f580e2cb2bda00b29714fd\\res\\layout\\notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "G:\\programming\\IDE\\android\\workspase\\NotePad-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat",
+        "source": "D:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\222cb7ce72f580e2cb2bda00b29714fd\\res\\drawable-xxxhdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png"
     },
     {
         "merged": "G:\\programming\\IDE\\android\\workspase\\NotePad-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_text_cursor_material.xml.flat",
@@ -640,6 +644,10 @@
         "source": "D:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\222cb7ce72f580e2cb2bda00b29714fd\\res\\drawable-mdpi-v4\\abc_ic_menu_share_mtrl_alpha.png"
     },
     {
+        "merged": "G:\\programming\\IDE\\android\\workspase\\NotePad-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_output_text.xml.flat",
+        "source": "G:\\programming\\IDE\\android\\workspase\\NotePad-master\\app\\src\\main\\res\\layout\\output_text.xml"
+    },
+    {
         "merged": "G:\\programming\\IDE\\android\\workspase\\NotePad-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
         "source": "D:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\222cb7ce72f580e2cb2bda00b29714fd\\res\\drawable-xxhdpi-v4\\abc_btn_check_to_on_mtrl_000.png"
     },
@@ -866,6 +874,10 @@
     {
         "merged": "G:\\programming\\IDE\\android\\workspase\\NotePad-master\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_alert_dialog_material.xml.flat",
         "source": "D:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\222cb7ce72f580e2cb2bda00b29714fd\\res\\layout\\abc_alert_dialog_material.xml"
+    },
+    {
+        "merged": "G:\\programming\\IDE\\android\\workspase\\NotePad-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_color.png.flat",
+        "source": "G:\\programming\\IDE\\android\\workspase\\NotePad-master\\app\\src\\main\\res\\mipmap-xhdpi\\ic_color.png"
     },
     {
         "merged": "G:\\programming\\IDE\\android\\workspase\\NotePad-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
@@ -1112,6 +1124,10 @@
         "source": "G:\\programming\\IDE\\android\\workspase\\NotePad-master\\app\\src\\main\\res\\menu\\list_context_menu.xml"
     },
     {
+        "merged": "G:\\programming\\IDE\\android\\workspase\\NotePad-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_color.png.flat",
+        "source": "G:\\programming\\IDE\\android\\workspase\\NotePad-master\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_color.png"
+    },
+    {
         "merged": "G:\\programming\\IDE\\android\\workspase\\NotePad-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_commit_search_api_mtrl_alpha.png.flat",
         "source": "D:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\222cb7ce72f580e2cb2bda00b29714fd\\res\\drawable-xhdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png"
     },
@@ -1162,6 +1178,10 @@
     {
         "merged": "G:\\programming\\IDE\\android\\workspase\\NotePad-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_clear_mtrl_alpha.png.flat",
         "source": "D:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\222cb7ce72f580e2cb2bda00b29714fd\\res\\drawable-xhdpi-v4\\abc_ic_clear_mtrl_alpha.png"
+    },
+    {
+        "merged": "G:\\programming\\IDE\\android\\workspase\\NotePad-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_color.png.flat",
+        "source": "G:\\programming\\IDE\\android\\workspase\\NotePad-master\\app\\src\\main\\res\\mipmap-hdpi\\ic_color.png"
     },
     {
         "merged": "G:\\programming\\IDE\\android\\workspase\\NotePad-master\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_primary_text_material_dark.xml.flat",
@@ -1350,6 +1370,10 @@
     {
         "merged": "G:\\programming\\IDE\\android\\workspase\\NotePad-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_menu_selectall_mtrl_alpha.png.flat",
         "source": "D:\\Android\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-23.4.0.aar\\222cb7ce72f580e2cb2bda00b29714fd\\res\\drawable-xhdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png"
+    },
+    {
+        "merged": "G:\\programming\\IDE\\android\\workspase\\NotePad-master\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_color.png.flat",
+        "source": "G:\\programming\\IDE\\android\\workspase\\NotePad-master\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_color.png"
     },
     {
         "merged": "G:\\programming\\IDE\\android\\workspase\\NotePad-master\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_star_half_black_36dp.png.flat",

@@ -51,6 +51,7 @@ import android.widget.SimpleCursorAdapter;
  */
 public class NotesList extends ListActivity {
 
+
     // For logging and debugging
     private static final String TAG = "NotesList";
 
@@ -70,6 +71,13 @@ public class NotesList extends ListActivity {
     /**
      * onCreate is called when Android starts this Activity from scratch.
      */
+
+    private MyCursorAdapter adapter;
+    private Cursor cursor;
+    private String[] dataColumns = { NotePad.Notes.COLUMN_NAME_TITLE ,  NotePad.Notes.COLUMN_NAME_MODIFICATION_DATE } ;
+    private int[] viewIDs = { R.id.noteTitle , R.id.noteTime };
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -102,7 +110,7 @@ public class NotesList extends ListActivity {
          *
          * Please see the introductory note about performing provider operations on the UI thread.
          */
-        Cursor cursor = managedQuery(
+        cursor = managedQuery(
             getIntent().getData(),            // Use the default content URI for the provider.
             PROJECTION,                       // Return the note ID and title for each note.
             null,                             // No where clause, return all records.
@@ -119,14 +127,14 @@ public class NotesList extends ListActivity {
          */
 
         // The names of the cursor columns to display in the view, initialized to the title column
-        String[] dataColumns = { NotePad.Notes.COLUMN_NAME_TITLE , NotePad.Notes.COLUMN_NAME_MODIFICATION_DATE } ;
+//        String[] dataColumns = { NotePad.Notes.COLUMN_NAME_TITLE , NotePad.Notes.COLUMN_NAME_MODIFICATION_DATE } ;
 
         // The view IDs that will display the cursor columns, initialized to the TextView in
         // noteslist_item.xml
-        int[] viewIDs = { R.id.noteTitle, R.id.noteTime };
+//        int[] viewIDs = { R.id.noteTitle, R.id.noteTime };
 
         // Creates the backing adapter for the ListView.
-        MyCursorAdapter adapter
+        adapter
             = new MyCursorAdapter(
                       this,                             // The Context for the ListView
                       R.layout.noteslist_item,          // Points to the XML for a list item
@@ -286,6 +294,62 @@ public class NotesList extends ListActivity {
             intent.setClass(NotesList.this,NoteSearch.class);
             NotesList.this.startActivity(intent);
             return true;
+        case R.id.menu_sort1:
+            Log.d(TAG, "onContextItemSelected: menu_sort1");
+            cursor = managedQuery(
+                    getIntent().getData(),
+                    PROJECTION,
+                    null,
+                    null,
+                    NotePad.Notes._ID
+            );
+            adapter = new MyCursorAdapter(
+                    this,
+                    R.layout.noteslist_item,
+                    cursor,
+                    dataColumns,
+                    viewIDs
+            );
+            setListAdapter(adapter);
+            return true;
+        //修改时间排序
+        case R.id.menu_sort2:
+            Log.d(TAG, "onContextItemSelected: menu_sort2");
+            cursor = managedQuery(
+                    getIntent().getData(),
+                    PROJECTION,
+                    null,
+                    null,
+                    NotePad.Notes.DEFAULT_SORT_ORDER
+            );
+            adapter = new MyCursorAdapter(
+                    this,
+                    R.layout.noteslist_item,
+                    cursor,
+                    dataColumns,
+                    viewIDs
+            );
+            setListAdapter(adapter);
+            return true;
+        //颜色排序
+        case R.id.menu_sort3:
+            Log.d(TAG, "onContextItemSelected: menu_sort3");
+            cursor = managedQuery(
+                    getIntent().getData(),
+                    PROJECTION,
+                    null,
+                    null,
+                    NotePad.Notes.COLUMN_NAME_BACK_COLOR
+            );
+            adapter = new MyCursorAdapter(
+                    this,
+                    R.layout.noteslist_item,
+                    cursor,
+                    dataColumns,
+                    viewIDs
+            );
+            setListAdapter(adapter);
+            return true;
         default:
             return super.onOptionsItemSelected(item);
         }
@@ -364,6 +428,7 @@ public class NotesList extends ListActivity {
      * which triggers the default handling of the item.
      * @throws ClassCastException
      */
+
     @Override
     public boolean onContextItemSelected(MenuItem item) {
         // The data from the menu item.
@@ -433,6 +498,7 @@ public class NotesList extends ListActivity {
   
             // Returns to the caller and skips further processing.
             return true;
+
         default:
             return super.onContextItemSelected(item);
         }

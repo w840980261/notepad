@@ -13,6 +13,8 @@
           android:title="@string/menu_delete"
           android:showAsAction="ifRoom|withText" />
     <item android:id="@+id/menu_color"
-        android:title="@string/menu_color"
-        android:showAsAction="always"/>
+        android:icon="@mipmap/ic_color"
+        android:title="@string/menu_color"/>
+    <item android:id="@+id/menu_output"
+    android:title="Output" />
 </menu>

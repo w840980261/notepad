@@ -483,8 +483,17 @@ public class NoteEditor extends Activity {
         case R.id.menu_color:
             changeColor();
             break;
+        case R.id.menu_output:
+            outputNote();
+            break;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    private final void outputNote() {
+        Intent intent = new Intent(null,mUri);
+        intent.setClass(NoteEditor.this,OutputText.class);
+        NoteEditor.this.startActivity(intent);
     }
 
     private final void changeColor() {
