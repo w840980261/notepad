@@ -8,7 +8,7 @@
 ![在这里插入图片描述](https://raw.githubusercontent.com/w840980261/notepad/master/img/editTitle.gif)
 
 ### 修改背景颜色
-![在这里插入图片描述](https://raw.githubusercontent.com/w840980261/notepad/master/img/colorChange.gif)
+![在这里插入图片描述](https://raw.githubusercontent.com/w840980261/notepad/master/img/changeColor.gif)
 
 ### 搜索记事本
 ![在这里插入图片描述](https://raw.githubusercontent.com/w840980261/notepad/master/img/search.gif)
