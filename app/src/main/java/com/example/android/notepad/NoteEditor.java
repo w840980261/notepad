@@ -580,6 +580,13 @@ public class NoteEditor extends Activity {
         ContentValues values = new ContentValues();
         values.put(NotePad.Notes.COLUMN_NAME_MODIFICATION_DATE, System.currentTimeMillis());
 
+        // This puts the desired notes text into the map.
+        values.put(NotePad.Notes.COLUMN_NAME_NOTE, text);
+        Long now = Long.valueOf(System.currentTimeMillis())+8*3600;
+        Date date = new Date(now);
+        SimpleDateFormat format = new SimpleDateFormat("yyyy.MM.dd HH:mm:ss");
+        String dateTime = format.format(date);
+        values.put(NotePad.Notes.COLUMN_NAME_MODIFICATION_DATE, dateTime);
         // If the action is to insert a new note, this creates an initial title for it.
         if (mState == STATE_INSERT) {
 
@@ -604,18 +611,12 @@ public class NoteEditor extends Activity {
             }
             // In the values map, sets the value of the title
             values.put(NotePad.Notes.COLUMN_NAME_TITLE, title);
+
+            values.put(NotePad.Notes.COLUMN_NAME_CREATE_DATE, dateTime);
         } else if (title != null) {
             // In the values map, sets the value of the title
             values.put(NotePad.Notes.COLUMN_NAME_TITLE, title);
         }
-
-        // This puts the desired notes text into the map.
-        values.put(NotePad.Notes.COLUMN_NAME_NOTE, text);
-        Long now = Long.valueOf(System.currentTimeMillis())+8*3600;
-        Date date = new Date(now);
-        SimpleDateFormat format = new SimpleDateFormat("yyyy.MM.dd HH:mm:ss");
-        String dateTime = format.format(date);
-        values.put(NotePad.Notes.COLUMN_NAME_MODIFICATION_DATE, dateTime);
 
         /*
          * Updates the provider with the new values in the map. The ListView is updated
